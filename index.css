@@ -1,0 +1,794 @@
+body {
+    background: linear-gradient(black, black);
+    position: relative;
+}
+
+header {
+    background-image: url('../portfolio/media/stars6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.diver {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.navbar-brand {
+    margin-left: 150px;
+}
+.footerrow{
+    border-top: 1px solid white;
+}
+
+.navbar-expand-lg {
+    position: fixed;
+    top: 0%;
+}
+
+.ul {
+    margin-left: 200px;
+    gap: 30px;
+}
+
+.nav-item {
+    color: white;
+}
+
+
+h1 {
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.job {
+
+    background: linear-gradient(to right, rgb(95, 9, 177) 43%, white 70%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: 257px;
+    margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 2px;
+    border-right: 3px solid white;
+    animation: typing 2s steps(19) 0.6s,
+        cursor .4s infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-right: 3px solid blueviolet;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0px;
+    }
+}
+textarea{
+    color: white;
+}
+
+/* .imgWork {
+    padding-right: 10px;
+} */
+
+.sectionContact {
+    margin-top: 8%;
+}
+
+.Name {
+    color: blueviolet;
+}
+
+.description {
+    color: rgba(222, 219, 219, 0.712);
+}
+
+.immg {
+    mix-blend-mode: lighten;
+}
+
+span:hover {
+    /* height: 40px;
+    width: 40px;
+    border: none; */
+}
+
+span:hover i {
+    color: white;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    border: 1px solid blueviolet;
+    background-color: transparent;
+    color: white;
+    transition: all 1s ease;
+}
+
+.skills {
+    color: white;
+}
+
+.works {
+    color: white;
+}
+
+button:hover {
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: rgb(101, 15, 181);
+    color: white;
+    border-radius: 10px;
+}
+
+.rowSkills {
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 40%, black 30%);
+    margin-top: 600px;
+}
+
+/* From Uiverse.io by MijailVillegas */
+.card {
+    max-width: fit-content;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    backdrop-filter: blur(15px);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.192),
+        inset 0 0 5px rgba(255, 255, 255, 0.274), 0 5px 5px rgba(0, 0, 0, 0.164);
+    transition: 0.5s;
+}
+
+.card:hover {
+    animation: ease-out 5s;
+    background: rgba(173, 173, 173, 0.05);
+}
+
+.card ul {
+    padding: 1rem;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card ul li {
+    cursor: pointer;
+}
+
+.svg {
+    transition: all 0.3s;
+    /* if you find some problems change w - h : 30px*/
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    color: rgb(138, 14, 200);
+    fill: currentColor;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+        inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.text {
+    opacity: 0;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s;
+    color: rgb(116, 12, 181);
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 9999;
+    box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
+        -10px 0 1px rgba(153, 153, 153, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.3),
+        inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+/*isometric prooyection*/
+.iso-pro {
+    transition: 0.5s;
+}
+
+.iso-pro:hover a>.svg {
+    transform: translate(15px, -15px);
+    border-radius: 100%;
+}
+
+.iso-pro:hover .text {
+    opacity: 1;
+    transform: translate(25px, -2px) skew(-5deg);
+}
+
+.iso-pro:hover .svg {
+    transform: translate(5px, -5px);
+}
+
+.iso-pro span {
+    opacity: 0;
+    position: absolute;
+    color: #1877f2;
+    border-color: #1877f2;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+        inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+    border-radius: 50%;
+    transition: all 0.3s;
+    height: 60px;
+    width: 60px;
+}
+
+.iso-pro:hover span {
+    opacity: 1;
+}
+
+.iso-pro:hover span:nth-child(1) {
+    opacity: 0.2;
+}
+
+.iso-pro:hover span:nth-child(2) {
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+}
+
+.iso-pro:hover span:nth-child(3) {
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+}
+
+/* From Uiverse.io by kennyotsu */
+/*works janky on mobile :<*/
+.container {
+    position: relative;
+    width: 60px;
+    height: 150px;
+    transition: 200ms;
+}
+
+.navbar-brand {
+    background: linear-gradient(to right, rgb(95, 9, 177) 43%, white 70%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: algerian;
+}
+
+.cardSkills {
+    width: 140px;
+}
+
+.view {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.rowSkills {
+    background-color: black;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+.container:active {
+    width: 180px;
+    height: 245px;
+}
+
+#card {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 700ms;
+    background: linear-gradient(43deg, rgba(27, 27, 27, 0.676) 0%, rgba(27, 27, 27, 0.676) 46%, rgba(27, 27, 27, 0.676) 100%);
+
+}
+
+.subtitle {
+    transform: translateY(160px);
+    color: rgb(134, 110, 221);
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    opacity: 0;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out-out;
+    transition-delay: 100ms;
+    position: absolute;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+.tracker:hover~#card .title {
+    opacity: 1;
+}
+
+#prompt {
+    /* bottom: 8px;
+    left: 12px; */
+    z-index: 20;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 300ms ease-in-out-out;
+    position: absolute;
+    max-width: 110px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracker {
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+}
+
+.tracker:hover {
+    cursor: pointer;
+}
+
+.tracker:hover~#card #prompt {
+    opacity: 0;
+}
+
+.tracker:hover~#card {
+    transition: 300ms;
+    filter: brightness(1.1);
+}
+
+.container:hover #card::before {
+    transition: 200ms;
+    content: '';
+    opacity: 80%;
+}
+
+.canvas {
+    perspective: 800px;
+    inset: 0;
+    z-index: 200;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5"
+        "tr-6 tr-7 tr-8 tr-9 tr-10"
+        "tr-11 tr-12 tr-13 tr-14 tr-15"
+        "tr-16 tr-17 tr-18 tr-19 tr-20"
+        "tr-21 tr-22 tr-23 tr-24 tr-25";
+}
+
+#card::before {
+    content: '';
+    background: linear-gradient(43deg, rgba(27, 27, 27, 0.676) 0%, rgba(27, 27, 27, 0.676) 46%, rgba(27, 27, 27, 0.676) 100%);
+    filter: blur(2rem);
+    opacity: 30%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 200ms;
+}
+
+.tr-1 {
+    grid-area: tr-1;
+}
+
+.tr-2 {
+    grid-area: tr-2;
+}
+
+.tr-3 {
+    grid-area: tr-3;
+}
+
+.tr-4 {
+    grid-area: tr-4;
+}
+
+.tr-5 {
+    grid-area: tr-5;
+}
+
+.tr-6 {
+    grid-area: tr-6;
+}
+
+.tr-7 {
+    grid-area: tr-7;
+}
+
+.tr-8 {
+    grid-area: tr-8;
+}
+
+.tr-9 {
+    grid-area: tr-9;
+}
+
+.tr-10 {
+    grid-area: tr-10;
+}
+
+.tr-11 {
+    grid-area: tr-11;
+}
+
+.tr-12 {
+    grid-area: tr-12;
+}
+
+.tr-13 {
+    grid-area: tr-13;
+}
+
+.tr-14 {
+    grid-area: tr-14;
+}
+
+.tr-15 {
+    grid-area: tr-15;
+}
+
+.tr-16 {
+    grid-area: tr-16;
+}
+
+.tr-17 {
+    grid-area: tr-17;
+}
+
+.tr-18 {
+    grid-area: tr-18;
+}
+
+.tr-19 {
+    grid-area: tr-19;
+}
+
+.tr-20 {
+    grid-area: tr-20;
+}
+
+.tr-21 {
+    grid-area: tr-21;
+}
+
+.tr-22 {
+    grid-area: tr-22;
+}
+
+.tr-23 {
+    grid-area: tr-23;
+}
+
+.tr-24 {
+    grid-area: tr-24;
+}
+
+.tr-25 {
+    grid-area: tr-25;
+}
+
+.tr-1:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-2:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-3:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-4:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-5:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-6:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-7:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-8:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-9:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-10:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-11:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-12:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-13:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-14:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-15:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-16:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-17:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-18:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-19:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-20:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-21:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-22:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-23:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-24:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-25:hover~#card {
+    transition: 125ms ease-in-out;
+    transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* From Uiverse.io by Sr-Ajo */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.message {
+    color: black;
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+form label {
+    position: relative;
+}
+
+form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(121, 120, 120, 0.269);
+}
+
+form label .input+span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: black;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+    color: white;
+}
+
+form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+form label .input:focus+span,
+form label .input:valid+span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+form label .input:valid+span {
+    color: green;
+}
+
+.input01 {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(121, 120, 120, 0.269);
+}
+
+form label .input01+span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: black;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+    color: white;
+
+}
+
+form label .input01:placeholder-shown+span {
+    top: 40px;
+    font-size: 0.9em;
+}
+
+form label .input01:focus+span,
+form label .input01:valid+span {
+    top: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+form label .input01:valid+span {
+    color: green;
+}
+
+/* From Uiverse.io by reglobby */
+.user-profile {
+    width: 131px;
+    height: 51px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: linear-gradient(to bottom right, blueviolet 0%, blueviolet);
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile:hover,
+.user-profile:focus {
+    background-color: rgb(73, 8, 134);
+    box-shadow: 0 0 10px rgb(114, 6, 215);
+    outline: none;
+}
+
+.user-profile-inner {
+    width: 127px;
+    height: 47px;
+    border-radius: 13px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.user-profile-inner svg {
+    width: 27px;
+    height: 27px;
+    fill: #fff;
+}
+
+.immg2 {
+    object-fit: contain;
+}
